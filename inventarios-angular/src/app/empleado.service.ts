@@ -5,7 +5,7 @@ import { Empleado } from './empleado';
 
 @Injectable({ providedIn: 'root' })
 export class EmpleadoService {
-  private base = 'http://localhost:8080/inventario-app/empleados';
+  private base = 'https://inventarioapp.railway.internal';
 
   constructor(private http: HttpClient) {}
 
