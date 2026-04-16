@@ -15,7 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("inventario-app")
-@CrossOrigin(origins = "https://inventarioumgapp.netlify.app")
+@CrossOrigin(origins = "https://inventario-app-bice.vercel.app")
 public class EmpleadoControlador {
 
     private static final Logger log = LoggerFactory.getLogger(EmpleadoControlador.class);
