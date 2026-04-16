@@ -6,7 +6,7 @@ import { HistorialAsignacion } from './historial-asignacion';
 
 @Injectable({ providedIn: 'root' })
 export class ActivoService {
-  private base = 'http://inventarioapp-production-6dd6.up.railway.app/inventario-app/activos';
+  private base = 'https://inventarioapp-production-6dd6.up.railway.app/inventario-app/activos';
   private histBase = 'http://inventarioapp-production-6dd6.up.railway.app/inventario-app/historial';
 
   constructor(private http: HttpClient) {}
