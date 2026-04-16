@@ -7,7 +7,7 @@ import { Producto } from './producto';
   providedIn: 'root',
 })
 export class ProductoService {
-  private urlBase = 'inventarioapp-production-6dd6.up.railway.app/productos';
+  private urlBase = 'http://inventarioapp-production-6dd6.up.railway.app/productos';
 
   constructor(private clienteHttp: HttpClient) {}
 
