@@ -48,8 +48,8 @@
             </td>
             <td>{{ a.empleado ? (a.empleado.nombre + ' ' + a.empleado.apellido) : '—' }}</td>
             <td class="text-center">
-              <button (click)="editar(a.idActivo)" class="btn btn-warning btn-sm me-1"></button>
-              <button (click)="eliminar(a.idActivo)" class="btn btn-danger btn-sm me-1"></button>
+              <button (click)="editar(a.idActivo)" class="btn btn-warning btn-sm me-1">Editar</button>
+              <button (click)="eliminar(a.idActivo)" class="btn btn-danger btn-sm me-1">Eliminar</button>
               <button *ngIf="a.estado==='asignado'" (click)="devolver(a.idActivo)" class="btn btn-secondary btn-sm">Devolver</button>
             </td>
           </tr>
