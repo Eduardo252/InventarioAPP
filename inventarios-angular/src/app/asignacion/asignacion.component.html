@@ -1,8 +1,8 @@
 <div class="container py-4">
-  <h4 class="fw-bold mb-4">🔗 Asignación de Activos</h4>
+  <h4 class="fw-bold mb-4"> Asignación de Activos</h4>
 
-  <div *ngIf="mensaje" class="alert alert-success py-2 small">✅ {{ mensaje }}</div>
-  <div *ngIf="error"   class="alert alert-danger  py-2 small">❌ {{ error }}</div>
+  <div *ngIf="mensaje" class="alert alert-success py-2 small"> {{ mensaje }}</div>
+  <div *ngIf="error"   class="alert alert-danger  py-2 small"> {{ error }}</div>
 
   <!-- Formulario de Asignación -->
   <div class="card shadow-sm border-0 mb-4">
@@ -28,7 +28,7 @@
           </select>
         </div>
         <div class="col-md-2">
-          <button class="btn btn-primary w-100" (click)="asignar()">🔗 Asignar</button>
+          <button class="btn btn-primary w-100" (click)="asignar()"> Asignar</button>
         </div>
       </div>
       <p *ngIf="activosDisponibles.length===0" class="text-muted small mt-2 mb-0">No hay activos disponibles para asignar.</p>
@@ -56,7 +56,7 @@
               </span>
             </td>
             <td class="text-center">
-              <button (click)="devolver(a.idActivo)" class="btn btn-secondary btn-sm">↩️ Devolver</button>
+              <button (click)="devolver(a.idActivo)" class="btn btn-secondary btn-sm"> Devolver</button>
             </td>
           </tr>
           <tr *ngIf="activosAsignados.length===0">
