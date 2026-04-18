@@ -5,7 +5,7 @@
   </div>
   <div class="input-group mb-3" style="max-width:400px">
     <input type="text" class="form-control form-control-sm" placeholder="Buscar por nombre..." [(ngModel)]="busqueda">
-    <button class="btn btn-outline-primary btn-sm" (click)="buscar()">🔍</button>
+    <button class="btn btn-outline-primary btn-sm" (click)="buscar()">Buscar</button>
     <button class="btn btn-outline-secondary btn-sm" (click)="busqueda='';cargar()">✕</button>
   </div>
   <div class="card shadow-sm border-0">
@@ -26,8 +26,8 @@
             <td><span class="badge bg-secondary">{{ e.departamento }}</span></td>
             <td>{{ e.puesto }}</td>
             <td class="text-center">
-              <button (click)="editar(e.idEmpleado)" class="btn btn-warning btn-sm me-1">✏️ Editar</button>
-              <button (click)="eliminar(e.idEmpleado)" class="btn btn-danger btn-sm">🗑️</button>
+              <button (click)="editar(e.idEmpleado)" class="btn btn-warning btn-sm me-1">Editar</button>
+              <button (click)="eliminar(e.idEmpleado)" class="btn btn-danger btn-sm">Eliminar</button>
             </td>
           </tr>
           <tr *ngIf="empleados.length===0">
