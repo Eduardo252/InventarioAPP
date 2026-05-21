@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("inventario-app")
-@CrossOrigin(origins = "https://just-success-production-2b7f.up.railway.app")
 public class HistorialControlador {
 
     @Autowired
